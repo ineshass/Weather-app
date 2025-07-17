@@ -1,12 +1,39 @@
-# React + Vite
+**Weather App**
+A simple desktop weather application built using C# and Windows Forms. This app fetches real-time weather data from the OpenWeatherMap API and displays it in a user-friendly interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Features**
+*Current Weather Information: Displays temperature, humidity, wind speed, and weather conditions.
+*City Search: Allows users to enter a city name to get the weather details.
+*Refresh Functionality: Update weather data with a single click.
 
-Currently, two official plugins are available:
+**Prerequisites**
+Before running the application, ensure you have the following:
+*Visual Studio installed.
+*An active internet connection to fetch weather data.
+*A valid OpenWeatherMap API key.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Setup Instructions**
+1/Clone the Repository:
+git clone https://github.com/ineshass/Weather-app.git
+cd Weather-app
 
-## Expanding the ESLint configuration
+2/Obtain an API Key:
+ Visit OpenWeatherMap.
+ Sign up or log in to your account.
+ Navigate to the API section and generate a new API key.
+ 
+ 3/Configure the API Key:
+ Open the project in Visual Studio.
+ Replace the placeholder API key in the code with your actual key:
+   private const string ApiKey = "YOUR_API_KEY";
+   
+4/Install Dependencies:
+ Open the Package Manager Console in Visual Studio.
+ Run the following command to install the necessary NuGet package:
+Install-Package Newtonsoft.Json
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5/Build and Run:
+Press F5 or click on the Start button in Visual Studio to build and run the application.
+
+
+
