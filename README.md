@@ -14,26 +14,26 @@ Before running the application, ensure you have the following:
 
 **Setup Instructions**
 1/Clone the Repository:
-git clone https://github.com/ineshass/Weather-app.git
-cd Weather-app
+git clone https://github.com/ineshass/Weather-app.git/
+cd Weather-app/
+npm install/
+code ./
 
-2/Obtain an API Key:
- Visit OpenWeatherMap.
- Sign up or log in to your account.
- Navigate to the API section and generate a new API key.
- 
- 3/Configure the API Key:
- Open the project in Visual Studio.
- Replace the placeholder API key in the code with your actual key:
-   private const string ApiKey = "YOUR_API_KEY";
-   
-4/Install Dependencies:
- Open the Package Manager Console in Visual Studio.
- Run the following command to install the necessary NuGet package:
-Install-Package Newtonsoft.Json
+2/Getting Your OpenWeatherMap API Key
+  Go to OpenWeatherMap.
+  Sign up for a free account or log in if you already have one.
+ After logging in, navigate to API keys in your account dashboard:
+ Click your profile icon (top right) and select API keys, or visit   https://home.openweathermap.org/api_keys.
+Create a new API key by clicking Create Key,and copy the generated key.
+
+3/Adding the API Key to the Project
+ In the root folder of the project, create a .env file if it doesn’t exist.
+ Add the following line to the .env file, replacing "your_api_key_here" with the key you copied:
+ VITE_APP_ID=your_api_key_here
+ Save the .env file.
 
 5/Build and Run:
-Press F5 or click on the Start button in Visual Studio to build and run the application.
+Press F5 or npm run dev in terminal and copy the localhost address.
 
 
 
